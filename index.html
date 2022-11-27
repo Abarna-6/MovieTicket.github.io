@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Ticket Booking</title>
+    <style>
+        h1{
+            color:#0000FF;
+            font-family:Monospace;
+            font-weight:Bold;
+            font-align:center;
+        }
+        body{
+            background-color: #00CED1;
+            color:#0C1584;
+        }
+        form,table{
+            text:align:center;
+            margin:center;
+            font-family:Monospace;
+            font-weight: bold;
+        }
+       
+    </style></head>
+    <body>
+        <center>
+            <h1>BOOK A SHOW - TICKET BOOKING</h1>
+            <form>
+                <table>
+                    <tr><td><label for="Name">Name</label></td>
+                    <td><input type="text" placeholder="Enter the Name"  name="name" id="name" required></td></tr>
+                    <tr><td><label for="moviename">Movie</label></td>
+                    <td><input type="text" placeholder="Movie Name" name="moviename" id="moviename" autocomplete="on"></td></tr>
+                    <tr><td><label for="Circle">Circle</label></td>
+                    <td><input type="text" name="circle" id="circle" autocomplete="on" ></td></tr>
+                    <tr><td><label for="phone no">Phone no</label></td>
+                    <td><input type="number" name="phone" id="phone" placeholder="Enter Mobile Number"></td></tr>
+                    <tr><td><label for="showdate">Show date and time</label></td>
+                    <td><input type="datetime-local" name="showdate" id="showdate">  </td></tr>
+                    <tr><td><label for="tickets">No of Adults</label></td>
+                    <td><input type="number" name="tickets" id="tickets" min="1" max="10" ></td></tr>
+                    <tr><td><label for="children"> No of childrens</label></td>
+                    <td><input type="number" name="children" id="children" min="1" max="10"></td></tr>
+                </table>
+            </form>
+            <input type="button" value="Book My Show" id="submit_value" name="submit" onclick="submit()" >
+            <input type="button" value="reset" id="reset" name="reset" onclick="reset()">
+        </center>
+        <script>
+            function submit()
+            {
+                alert("Booking Successful");
+            }
+            function reset()
+            {
+               
+            }
+        </script>
+    </body>
+</html>
